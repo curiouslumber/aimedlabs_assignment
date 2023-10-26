@@ -11,12 +11,13 @@ class HomePage extends StatelessWidget {
         body: LayoutBuilder(
             builder: (BuildContext context, BoxConstraints constraints) {
           return Padding(
-            padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 4.w),
+            padding: EdgeInsets.only(top: 2.h, left: 4.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
+                  width: constraints.maxWidth / 1.1,
                   height: 10.h,
                   decoration:
                       BoxDecoration(color: const Color(0xffD18585), boxShadow: [
@@ -35,7 +36,7 @@ class HomePage extends StatelessWidget {
                     children: [
                       Container(
                         color: const Color(0xffC4C4C4),
-                        width: constraints.maxWidth / 3.5,
+                        width: 150,
                         height: 2.5.h,
                       ),
                       const Spacer(
@@ -44,7 +45,7 @@ class HomePage extends StatelessWidget {
                       Container(
                         color: const Color(0xffA8D8AD),
                         height: 2.8.h,
-                        width: constraints.maxWidth / 1.15,
+                        width: constraints.maxWidth / 1.22,
                       )
                     ],
                   ),
@@ -68,13 +69,13 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     height: 10.h,
-                    width: constraints.maxWidth / 1.12,
+                    width: constraints.maxWidth / 1.18,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Container(
-                          width: constraints.maxWidth / 1.12,
+                          width: constraints.maxWidth / 1.2,
                           color: const Color(0xffA8D8AD),
                           height: 2.8.h,
                         )
@@ -83,7 +84,7 @@ class HomePage extends StatelessWidget {
                   ),
                   Container(
                     color: const Color(0xffC4C4C4),
-                    width: 30.w,
+                    width: 180,
                     height: 4.5.h,
                   ),
                 ]),
